@@ -1,0 +1,12 @@
+<h2>New Task</h2>
+<%= form_for(@task) do |t| %>
+  <%= t.label :title %>
+  <%= t.text_field :title %>
+  <%= t.label :details %>
+  <%= t.text_field :details %>
+  <%= t.submit %>
+<% end %>
+
+<form method="get" action="/tasks">
+    <button type="submit">Back to list</button>
+</form>

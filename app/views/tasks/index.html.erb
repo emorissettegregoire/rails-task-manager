@@ -1,7 +1,5 @@
 
 <h1>Tasks</h1>
-
-
  <% @tasks.each do |task| %>
    <ul>
    <% if task.completed %>
@@ -11,3 +9,7 @@
    <% end %>
     </ul>
  <% end %>
+
+<form method="get" action="/tasks/new">
+    <button type="submit">Add a new task</button>
+</form>
